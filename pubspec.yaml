@@ -31,12 +31,20 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
-  flutter_launcher_icons: ^0.14.1
   flutter_svg: ^2.0.10+1
   go_router: ^14.2.8
+  flutter_lints: ^5.0.0
+  icons_launcher: ^3.0.0
+
+icons_launcher:
+  image_path: "assets/images/logo/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 
@@ -55,6 +63,7 @@ flutter:
     - assets/images/logo/
     - assets/images/icons/
     - assets/fonts/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
