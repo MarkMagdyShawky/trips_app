@@ -21,7 +21,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
   @override
   void initState() {
     slidingAnimationHelper();
-    // navigateHome();
+    navigateHome();
     super.initState();
   }
 
