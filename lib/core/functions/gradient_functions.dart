@@ -15,3 +15,11 @@ Gradient LinearCenterGradientbackground(List<Color> colors) {
     end: Alignment.bottomCenter,
   );
 }
+
+Gradient LinerHorizontalGradientBackGround(List<Color> colors) {
+  return LinearGradient(
+    colors: colors,
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+  );
+}

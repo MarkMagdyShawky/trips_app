@@ -4,7 +4,7 @@ import 'package:trips_app/core/functions/gradient_functions.dart';
 import 'package:trips_app/core/resources/app_router.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
-import 'package:trips_app/features/splash/presentation/screen/widgets/custom_splah_view_logo.dart';
+import 'package:trips_app/features/splash/presentation/screen/widgets/custom_logo_widget.dart';
 import 'package:trips_app/features/splash/presentation/screen/widgets/sliding_text_animation.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -43,7 +43,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            const CustomSplashViewLogo(),
+            const CustomSLogoWidget(),
             SlidingTextAnimation(slidingAnimation: slidingAnimation),
           ],
         ),
