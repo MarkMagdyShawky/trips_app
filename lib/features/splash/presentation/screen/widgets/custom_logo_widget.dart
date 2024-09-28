@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:trips_app/core/resources/image_manager.dart';
 
-class CustomSplashViewLogo extends StatelessWidget {
-  const CustomSplashViewLogo({
+class CustomSLogoWidget extends StatelessWidget {
+  const CustomSLogoWidget({
     super.key,
   });
 
