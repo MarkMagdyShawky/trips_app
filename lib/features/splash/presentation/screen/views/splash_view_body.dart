@@ -21,7 +21,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
   @override
   void initState() {
     slidingAnimationHelper();
-    navigateHome();
+    // navigateHome();
     super.initState();
   }
 
@@ -37,16 +37,16 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
       width: PageDimensions().pageWidth(context),
       height: PageDimensions().pageHeight(context),
       decoration: BoxDecoration(
-        gradient: LinearGradientbackground([kWhiteColor, kBlueColor]),
+        gradient: LinearCenterGradientbackground([kWhiteColor, kBlueColor]),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const CustomSplashViewLogo(),
-          const SizedBox(height: 20),
-          SlidingTextAnimation(slidingAnimation: slidingAnimation),
-        ],
+      child: Center(
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            const CustomSplashViewLogo(),
+            SlidingTextAnimation(slidingAnimation: slidingAnimation),
+          ],
+        ),
       ),
     );
   }
@@ -54,7 +54,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
   void slidingAnimationHelper() {
     animationController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
     slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero).animate(animationController);
+        Tween<Offset>(begin: const Offset(0, 2), end: Offset(0, -1)).animate(animationController);
     animationController.forward();
   }
 

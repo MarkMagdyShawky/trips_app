@@ -37,8 +37,7 @@ abstract class Styles {
   );
 
   static const textStyleLogo = TextStyle(
-    fontSize: 34,
-    fontWeight: FontWeight.w600,
+    fontSize: 30,
     fontFamily: 'Bangers',
   );
 

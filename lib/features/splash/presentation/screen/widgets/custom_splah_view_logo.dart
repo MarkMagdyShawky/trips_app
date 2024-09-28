@@ -11,8 +11,8 @@ class CustomSplashViewLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return SvgPicture.asset(
       ImageManager.kAppLogo,
-      width: 200,
-      height: 200,
+      width: 300,
+      height: 300,
     );
   }
 }
