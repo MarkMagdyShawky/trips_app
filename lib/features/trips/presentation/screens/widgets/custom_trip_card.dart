@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
-import 'package:trips_app/core/resources/image_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
 import 'package:trips_app/core/resources/styles.dart';
 import 'package:trips_app/features/trips/presentation/screens/widgets/custom_price_widget.dart';
