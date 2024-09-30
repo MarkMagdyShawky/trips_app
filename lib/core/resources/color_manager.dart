@@ -8,4 +8,6 @@ const Color kYellowColor2 = Color.fromARGB(255, 255, 224, 123);
 
 const Color kWhiteColor = Colors.white;
 
+const Color kWhiteColor2 = Color(0xffD9D9D9);
+
 const Color kBlackColor = Colors.black;
