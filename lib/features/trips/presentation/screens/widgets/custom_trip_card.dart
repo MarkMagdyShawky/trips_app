@@ -8,7 +8,19 @@ import 'package:trips_app/features/trips/presentation/screens/widgets/custom_rat
 import 'package:trips_app/features/trips/presentation/screens/widgets/custom_trip_card_image.dart';
 
 class CustomTripCard extends StatelessWidget {
-  const CustomTripCard({super.key});
+  const CustomTripCard({
+    super.key,
+    required this.image,
+    required this.tripName,
+    required this.trpiInfo,
+    required this.oldPrice,
+    required this.currenPrice,
+  });
+  final String image;
+  final String tripName;
+  final String trpiInfo;
+  final double oldPrice;
+  final double currenPrice;
 
   @override
   Widget build(BuildContext context) {
@@ -16,25 +28,25 @@ class CustomTripCard extends StatelessWidget {
       width: PageDimensions().pageWidth(context),
       height: PageDimensions().pageHeight(context) / 2,
       decoration: BoxDecoration(
-        color: kWhiteColor2.withOpacity(0.3),
+        color: kWhiteColor2.withOpacity(0.2),
         borderRadius: BorderRadius.circular(25),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomTripCardImage(image: ImageManager.kTestImage),
+          CustomTripCardImage(image: image),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
             child: Text(
-              'El Marina',
+              tripName,
               style: Styles.textStyle20.copyWith(fontFamily: 'Bangers'),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Text(
-              'Go to the Red Sea for an initiation to diving. It is impossible to go through Egypt and miss this activity. Indeed, the Red Sea is an excellent destination for beginners & experienced divers .',
+              trpiInfo,
               style: Styles.textStyle16,
               maxLines: 6,
               overflow: TextOverflow.ellipsis,
@@ -46,11 +58,11 @@ class CustomTripCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CustomPriceWidget(oldPrice: 40, currentPrice: 30),
+                CustomPriceWidget(oldPrice: oldPrice, currentPrice: currenPrice),
                 CustomRatingWidget(),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
