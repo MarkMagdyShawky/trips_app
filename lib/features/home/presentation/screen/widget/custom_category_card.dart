@@ -11,10 +11,14 @@ class CustomCategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+      padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
       child: Container(
         height: PageDimensions().pageHeight(context) / 4.2,
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+                color: kBlueColor.withOpacity(0.6), spreadRadius: 1, blurRadius: 20, offset: Offset(0, 2))
+          ],
           borderRadius: BorderRadius.circular(25),
           image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
         ),

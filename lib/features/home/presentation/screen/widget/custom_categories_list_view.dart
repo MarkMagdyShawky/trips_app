@@ -18,10 +18,7 @@ class CustomCategoriesListView extends StatelessWidget {
           onTap: () {
             GoRouter.of(context).push(RoutesNames.kTripsView);
           },
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 35.0),
-            child: CustomCategoryCard(image: ImageManager.kTestImage, catigoryName: 'Hurghada'),
-          ),
+          child: CustomCategoryCard(image: ImageManager.kTestImage, catigoryName: 'Hurghada'),
         );
       },
     );
