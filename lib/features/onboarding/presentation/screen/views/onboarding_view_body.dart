@@ -32,19 +32,19 @@ class OnboardingViewBody extends StatelessWidget {
               image: ImageManager.kTravellingIcon,
               text: 'Don\'t let your busy schedule stop you from enjoying',
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 30),
             CustomInofWidget(
               image: ImageManager.kCalenderIcon,
               text: 'Explore Egypt with amazing tours and trips',
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 30),
             CustomInofWidget(
               image: ImageManager.kBeachIcon,
               text:
                   'Egypt has something for everyone,whether you are looking for relaxation, adventure, culture, or entertainment.',
             ),
-            SizedBox(height: 100),
-            CustomButton()
+            SizedBox(height: 70),
+            CustomButton(),
           ],
         ),
       ),
