@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:trips_app/core/functions/gradient_functions.dart';
-import 'package:trips_app/core/resources/app_router.dart';
+import 'package:trips_app/core/utils/app_router.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
 import 'package:trips_app/features/splash/presentation/screen/widgets/custom_logo_widget.dart';

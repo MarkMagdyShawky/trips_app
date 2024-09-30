@@ -3,7 +3,6 @@ import 'package:trips_app/core/functions/gradient_functions.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
 import 'package:trips_app/core/resources/image_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
-import 'package:trips_app/core/resources/styles.dart';
 import 'package:trips_app/features/onboarding/presentation/screen/widget/custom_button.dart';
 import 'package:trips_app/features/onboarding/presentation/screen/widget/custom_info_widget.dart';
 import 'package:trips_app/features/onboarding/presentation/screen/widget/custom_rich_text_widget.dart';
@@ -26,6 +25,7 @@ class OnboardingViewBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            SizedBox(height: 20),
             CustomRichTexrWidget(),
             CustomSLogoWidget(),
             CustomInofWidget(
