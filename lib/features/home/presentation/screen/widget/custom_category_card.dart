@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trips_app/core/functions/gradient_functions.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
-import 'package:trips_app/core/resources/image_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
 import 'package:trips_app/core/resources/styles.dart';
 
