@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:trips_app/core/functions/gradient_functions.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
 import 'package:trips_app/core/resources/pageDimensions.dart';
 import 'package:trips_app/core/resources/styles.dart';
+import 'package:trips_app/core/utils/app_router.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -23,12 +25,13 @@ class CustomButton extends StatelessWidget {
       child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         splashColor: kYellowColor,
-        elevation: 40,
         hoverColor: kBlueColor,
-        onPressed: () {},
+        onPressed: () {
+          GoRouter.of(context).push(RoutesNames.kHomeView);
+        },
         child: Text(
-          'Let\'sGo',
-          style: Styles.textStyle18,
+          'Let\'s Go',
+          style: Styles.textStyle22.copyWith(fontFamily: 'Bangers'),
         ),
       ),
     );
