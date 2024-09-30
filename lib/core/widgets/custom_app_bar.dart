@@ -7,9 +7,9 @@ class CustomAppBar {
     return AppBar(
       title: Text(
         title,
-        style: Styles.textStyle22.copyWith(fontWeight: FontWeight.w600),
+        style: Styles.textStyle24.copyWith(fontFamily: 'Bangers'),
       ),
-      iconTheme: IconThemeData(size: 32),
+      iconTheme: IconThemeData(size: 32, color: kBlackColor, weight: 0.6),
       elevation: 0,
       backgroundColor: kWhiteColor,
       shadowColor: Colors.transparent,
