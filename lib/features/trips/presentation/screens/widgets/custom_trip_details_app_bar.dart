@@ -12,7 +12,7 @@ class CustomTripDetailsAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 40),
+      padding: const EdgeInsets.only(right: 10.0, top: 40),
       child: Row(
         children: [
           IconButton(
