@@ -10,4 +10,5 @@ const Color kWhiteColor = Colors.white;
 
 const Color kWhiteColor2 = Color(0xffD9D9D9);
 
+const Color kRedColor = Color(0xFFFF3838);
 const Color kBlackColor = Colors.black;
