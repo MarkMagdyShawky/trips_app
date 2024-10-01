@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:trips_app/core/functions/gradient_functions.dart';
 import 'package:trips_app/core/resources/color_manager.dart';
 import 'package:trips_app/core/resources/styles.dart';
+import 'package:trips_app/features/trips/presentation/screens/widgets/old_price_widget.dart';
 
 class CustomPriceWidget extends StatelessWidget {
   const CustomPriceWidget({
@@ -23,16 +24,7 @@ class CustomPriceWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Text(
-            '$oldPrice\$',
-            style: Styles.textStyle18.copyWith(
-              fontWeight: FontWeight.w600,
-              color: const Color(0xFF8C8C8C),
-              decoration: TextDecoration.lineThrough,
-              decorationColor: const Color(0xFF8C8C8C),
-              decorationThickness: 2,
-            ),
-          ),
+          OldPriceWidget(oldPrice: oldPrice),
           SizedBox(width: 10),
           Text(
             '$currentPrice\$',
