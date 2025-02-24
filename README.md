@@ -45,18 +45,6 @@ Sun and Sea is developed using modern technologies and best practices to ensure 
 - **Offline Support:** Flutter Offline
 - **Notifications:** Local and Push Notifications
 
-### Key Packages
-
-- **[flutter_bloc](https://pub.dev/packages/flutter_bloc):** State management.
-- **[flutter_svg](https://pub.dev/packages/flutter_svg):** Handling SVG images.
-- **[dio](https://pub.dev/packages/dio):** Networking and API integration.
-- **[flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications):** Managing notifications.
-- **[flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage):** Secure data storage.
-
-<div align="center">
-  <img src="./app_screenshots/sunAndSeaDeps.png" alt="dependencies" width="250" height="310"/>
-</div>
-
 ---
 
 ## 📝 Usage
