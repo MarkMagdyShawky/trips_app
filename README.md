@@ -27,11 +27,8 @@
 
  Image 1 | Image 2 |
 |---------|---------|
-| ![Image 1](./app_screenshots/1.png) | ![Image 2](./app_screenshots/2.png) |
+| ![Image 1](./app_screenshots/17.png) | ![Image 2](./app_screenshots/18.png) |
 
- Image 3 | Image 4 |
-|---------|---------|
-| ![Image 3](./app_screenshots/3.png) | ![Image 4](./app_screenshots/4.png) |
 
 ---
 
